@@ -1,0 +1,37 @@
+[bluetooth]
+command=~/.config/i3blocks/bluetooth.sh
+interval=1
+markup=pango
+
+[volume]
+command=~/.config/i3blocks/volume.sh
+interval=5
+markup=pango
+
+[network]
+command=~/.config/i3blocks/network.sh
+interval=5
+markup=pango
+
+[vpn]
+command=~/.config/i3blocks/vpn.sh
+interval=10
+markup=pango
+
+[cpu]
+command=~/.config/i3blocks/cpu.sh
+interval=1
+markup=pango
+
+[date]
+command=date "+%a %b %d"
+interval=60
+
+[time]
+command=date "+%I:%M %p"
+interval=60
+
+[power]
+command=~/.config/i3blocks/power.sh
+interval=60
+markup=pango

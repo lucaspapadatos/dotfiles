@@ -1,0 +1,51 @@
+[[colors.indexed_colors]]
+color = "0xF8BD96"
+index = 16
+
+[[colors.indexed_colors]]
+color = "0xF5E0DC"
+index = 17
+
+[colors.bright]
+black = "0x1c1c1f"
+blue = "0x96CDFB" # baby blue
+cyan = "0x41fdfe"
+green = "0x4dff64"
+magenta = "0xFF00FF"
+red = "0xDE0607"
+white = "0xffffff"
+yellow = "0xcfff04" # neon yellow
+
+[colors.cursor]
+cursor = "0xffffff"
+text = "0x000000"
+
+[colors.normal]
+black = "0x100C08"
+blue = "0x00EEEE" # hyperlink
+cyan = "0x0ab5d7" # arch cyan
+green = "0x32de84"
+magenta = "0x8b008b"
+red = "0xb00000"
+white = "0xD9E0EE"
+yellow = "0xFAE3B0"
+
+[colors.primary]
+background = "0x000000"
+foreground = "0xffffff"
+
+
+[cursor.style]
+shape = "beam"
+blinking = "Always"
+
+[window]
+opacity = 0.75
+decorations = "none"
+dimensions = { columns = 87, lines = 30 }
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+size = 10

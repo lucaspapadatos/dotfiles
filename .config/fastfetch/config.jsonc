@@ -1,0 +1,41 @@
+{
+  "logo": {
+    "type": "auto",
+    "color": {
+      "2": "light_red",
+      "1": "red"
+    }
+  },
+  "display": {
+      "color": {
+          "keys": "red",
+          "title": "light_red"
+      }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "localip",
+    "break"
+  ]
+}
+
