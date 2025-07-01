@@ -30,7 +30,10 @@ alias nano="$EDITOR"
 # alias listing commands
 alias ls='ls -Alh --color=auto'			# shows hidden files
 alias lr='ls -lRh'						# recursive ls
+
+# alias misc
 alias grep='grep --color=auto'
+alias atop='amdgpu_top'
 
 # color
-PS1='\[\e[31m\][\u@\h\W]\$\[\e[0m\] '
+PS1='\[\e[31m\][\u@\h \W]\$\[\e[0m\] '

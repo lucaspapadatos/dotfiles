@@ -17,3 +17,9 @@ rsync -av \
 rsync -av ~/.fonts/ ~/dotfiles/.fonts/
 rsync -av ~/.scripts/ ~/dotfiles/.scripts/
 rsync -av ~/.bashrc ~/dotfiles/.bashrc
+
+# update github
+cd /home/lucas/dotfiles
+git add -A
+git commit -m "Update files"
+git push origin master
