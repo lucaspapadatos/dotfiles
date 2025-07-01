@@ -16,7 +16,7 @@ fi
 sleep 1
 
 # Re-establish internet connection
-bash /home/lucas/Scripts/internet_on.sh
+bash /home/lucas/.scripts/internet_on.sh
 
 sleep 2
 
