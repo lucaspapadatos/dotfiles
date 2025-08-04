@@ -22,6 +22,11 @@ fi
 export EDITOR="/usr/bin/nvim"
 export TERMINAL="/usr/bin/alacritty"
 
+# hugging face models to hdd
+export HUGGINGFACE_HUB_CACHE="/mnt/BACKUP/ISOLATEDSEAGATE/.cache/huggingface/hub"
+export TRANSFORMERS_CACHE="/mnt/BACKUP/ISOLATEDSEAGATE/.cache/huggingface/transformers"
+export DIFFUSERS_CACHE="/mnt/BACKUP/ISOLATEDSEAGATE/.cache/huggingface/diffusers"
+
 # alias editors
 alias vim="$EDITOR"
 alias vi="$EDITOR"

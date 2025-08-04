@@ -9,19 +9,34 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  "rose-pine/neovim",
-  name = "rose-pine",
-  priority = 1000,
-  config = function()
-    require("rose-pine").setup({
-      disable_background = true,
-      disable_float_background = true
-    })
-    vim.cmd("colorscheme rose-pine")
-	vim.api.nvim_set_hl(0, "Keyword", { fg = "#b00000" })
-	vim.api.nvim_set_hl(0, "Statement", { fg = "#b00000" })
-	vim.cmd [[
-	    highlight String guifg=#6bffe1
-	]]
-  end
+	require("lucas.telescope"),
+	{	-- theme configuration for telescope
+		"rose-pine/neovim",
+		config = function()
+			require("rose-pine").setup({
+				disable_background = true,
+				disable_float_background = true
+			})
+			vim.cmd("colorscheme rose-pine")
+		end
+	},
+	{	-- treesitter
+		"nvim-treesitter/nvim-treesitter", 
+		branch = 'master', 
+		lazy = false, 
+		build = ":TSUpdate"
+	},
+	{	-- treesitter ast
+		"nvim-treesitter/playground" 
+	},
+	{	-- harpoon
+		"theprimeagen/harpoon"
+	},
+	{	-- undo tree
+		"mbbill/undotree"
+	},
+	{	-- fugitive git control
+		"tpope/vim-fugitive"
+	}
+
 })
